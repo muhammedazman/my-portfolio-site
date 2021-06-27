@@ -1,8 +1,6 @@
 ---
 title: "Test Tutorial"
 date: 2021-06-27T20:13:09+02:00
-draft: true
-toc: true
 tags:
 - Java
 ---
