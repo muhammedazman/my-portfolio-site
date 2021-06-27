@@ -27,4 +27,6 @@
     </div>
 </nav>
 
+{{ if .IsHome }}
 {{ partial "my-info.html" . }}
+{{ end }}
