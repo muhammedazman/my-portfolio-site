@@ -1,12 +1,12 @@
 # Hugo Theme Tania
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bae5db51-7cc6-41e2-9615-029ade8aa264/deploy-status)](https://app.netlify.com/sites/hugo-tania/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/976f2b0a-eb9e-4e5e-ac66-388edde687a2/deploy-status)](https://app.netlify.com/sites/muhammedazman/deploys)
 
 A simple theme for bloggers.
 
 ## Demo
 
-[Example Site](https://hugo-tania.netlify.app/)
+[Example Site](https://muhammedazman.netlify.app/)
 
 ## Introduction
 Most of the styles for this theme come from [taniarascia.com](https://github.com/taniarascia/taniarascia.com)
