@@ -71,6 +71,17 @@ header {
     }
 }
 
+.container-toc{
+
+    display: flex;
+    margin: auto 0;
+    > .toc {
+     right: 1rem;
+     top: 10rem;
+     position: fixed;
+    }
+}
+
 .article-post {
     margin-bottom: 2rem;
     
@@ -124,6 +135,13 @@ header {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .toc{
+        display: none;
     }
 }
 

@@ -41,6 +41,10 @@ paginate = 6
 [[menu.header]]
   name = "Articles"
   url = "/articles/"
+[[menu.header]]
+  name = "Java"
+  url = "/java/"
+
 [[menu.footer]]
     name = "RSS"
     url = "/index.xml"
@@ -51,6 +55,16 @@ paginate = 6
   lineNos = true
 [markup.goldmark.renderer]
   unsafe = true
+[markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false
+
+[param]
+  # Minimum word count to display the Table of Contents
+  tocMinWordCount = 500
+[tableOfContents]
+  other = "Table of Contents"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
