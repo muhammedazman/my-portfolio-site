@@ -1,44 +1,150 @@
-<p align="center"><a href="https://wowchemy.com/templates/" target="_blank" rel="noopener"><img src="https://wowchemy.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Template for Wowchemy Website Builder"></a></p>
- 
-# Academic Template for [Hugo](https://github.com/gohugoio/hugo)
+# Hugo Theme Tania
 
-The Hugo **Academic Resumé Template** empowers you to create your job-winning online resumé and showcase your academic publications.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bae5db51-7cc6-41e2-9615-029ade8aa264/deploy-status)](https://app.netlify.com/sites/hugo-tania/deploys)
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://wowchemy.com/user-stories/).
+A simple theme for bloggers.
 
-[**Wowchemy**](https://wowchemy.com) makes it easy to create a beautiful website for free. Edit your site in Markdown, Jupyter, or RStudio (via Blogdown), generate it with Hugo, and deploy with GitHub or Netlify. Customize anything on your site with widgets, themes, and language packs.
+## Demo
 
-- 👉 [**Get Started**](https://wowchemy.com/templates/)
-- 📚 [View the **documentation**](https://wowchemy.com/docs/)
-- 💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
-- 💡 [Request a **feature** or report a **bug** for _Wowchemy_](https://github.com/wowchemy/wowchemy-hugo-modules/issues)
-- ⬆️ **Updating Wowchemy?** View the [Update Guide](https://wowchemy.com/docs/guide/update/) and [Release Notes](https://wowchemy.com/updates/)
+[Example Site](https://hugo-tania.netlify.app/)
 
-## Crowd-funded open-source software
+## Introduction
+Most of the styles for this theme come from [taniarascia.com](https://github.com/taniarascia/taniarascia.com)
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
+I like it's style, so I transplant it to Hugo.
 
-### [❤️ Click here to unlock rewards with sponsorship](https://wowchemy.com/plans/)
+And is that why this theme called Tania.
 
-## Ecosystem
+Thank Tania Rascia again.
 
-* **[Hugo Academic CLI](https://github.com/wowchemy/hugo-academic-cli):** Automatically import publications from BibTeX
+## Requirements
 
-[![Screenshot](https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/main/academic.png)](https://wowchemy.com)
+It's necessary to use **Hugo ≥ 0.78.0**.
 
-## Demo image credits
+Use Hugo Extended version (recommended) if you want to:
 
-- [Open book](https://unsplash.com/photos/J4kK8b9Fgj8)
-- [Course](https://unsplash.com/photos/JKUTrJ4vK00)
+- Use the latest feature/fix from main branch
+- Edit SCSS files
 
-## Latest news
-<!--START_SECTION:news-->
-* [What&#39;s new in v5.2?](https:&#x2F;&#x2F;wowchemy.com&#x2F;blog&#x2F;v5.2.0&#x2F;)
-* [What&#39;s new in v5.1?](https:&#x2F;&#x2F;wowchemy.com&#x2F;blog&#x2F;v5.1.0&#x2F;)
-* [Version 5.0 (February 2021)](https:&#x2F;&#x2F;wowchemy.com&#x2F;blog&#x2F;v5.0.0&#x2F;)
-* [Version 5.0 Beta 3 (February 2021)](https:&#x2F;&#x2F;wowchemy.com&#x2F;blog&#x2F;v5.0.0-beta.3&#x2F;)
-* [Version 5.0 Beta 2 (January 2021)](https:&#x2F;&#x2F;wowchemy.com&#x2F;blog&#x2F;v5.0.0-beta.2&#x2F;)
-<!--END_SECTION:news-->
+## Features
 
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/starter-academic/readme?pixel)](https://github.com/igrigorik/ga-beacon)
+- Responsive and Mobile-Friendly
+- Dark mode(It can switch automatically or manually)
+- Footnotes(Float on the right side)
+- Search with categories filter
+
+## Installation
+
+In your site's root dir
+
+```bash
+git submodule add https://github.com/WingLim/hugo-tania themes/hugo-tania
+```
+
+Edit your site config following [exampleSite/config.yaml](https://github.com/WingLim/hugo-tania/blob/main/exampleSite/config.yaml).
+
+## Configuration
+
+### Menu
+
+You can custom header and footer menu.
+
+```yaml
+menu:
+  header:
+    - name: Articles
+      url: "/articles/"
+  footer:
+    - name: RSS
+      url: "/index.xml"
+```
+
+### Site Configuration
+
+There are a few configuration options that you can add to your `config.yaml` file.
+
+You can also see the `toml` example in [exampleSite/config.example.toml](https://github.com/WingLim/hugo-tania/blob/main/exampleSite/config.example.toml)
+
+```yaml
+params:
+  # Emoji will show before the blog title on site navbar.
+  titleEmoji: '😎'
+
+  # Logo will show before the blog title on site navbar.
+  titleLogo:
+  
+  # Enable float footnotes.
+  # Default to true
+  enableFootnotes: true
+
+  # Limit how many categories filter show above search input.
+  # Default to 5
+  maxCategoryToShow: 10
+
+  # Show your socail information with icon on index bio with `_index.md` content.
+  socialOptions:
+    dev-to:
+    email:
+    facebook:
+    github:
+    instagram:
+    linkedin:
+    medium:
+    stack-overflow:
+    steam:
+    telegram:
+    twitter:
+    twitch:
+    whatsapp:
+
+  # Addtional option for meta SEO
+  siteName:
+  siteDesc: 
+  author: 
+```
+
+## Layout
+
+### Archives
+
+`archives` layout is for showing all articles you write.
+
+Add `articles.md` to site `content` dir, and write as below:
+
+If you want to show it on site header, see [#Menu](#menu)
+
+```markdown
+---
+title: Articles
+subtitle: Posts, tutorials, snippets, musings, and everything else.
+date: 2020-11-26
+type: section
+layout: "archives"
+---
+```
+
+## Article Params
+
+### Enable math formula render
+
+For enable math formula render, add `katex: true` or `mathjax: true` in your article head, like:
+
+Notice: You should enable only one `katex` or `mathjax` in a same time.
+
+```markdown
+---
+title: Title
+katex: true
+---
+
+Some content...
+
+```
+
+## Thanks to
+- [你好黑暗，我的老朋友 —— 为网站添加用户友好的深色模式支持](https://blog.skk.moe/post/hello-darkmode-my-old-friend/)
+- [Footnotes, citations, and sidenotes](https://prose.yihui.org/about/#footnotes-citations-and-sidenotes)
+
+## License
+
+[MIT](https://github.com/WingLim/hugo-tania/blob/main/LICENSE)
