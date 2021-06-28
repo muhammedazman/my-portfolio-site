@@ -21,14 +21,15 @@ paginate = 6
   # Default to 5
   maxCategoryToShow = 10
 
+
   # Show your social information with icon on index bio with `_index.md` content.
   [params.socialOptions]
     dev-to = ""
-    email = ""
+    email = "vmazman@gmail.com"
     facebook = ""
-    github = ""
+    github = "https://github.com/muhammedazman"
     instagram = ""
-    linkedin = ""
+    linkedin = "https://www.linkedin.com/in/muhammed-azman-786960168/"
     medium = ""
     stack-overflow = ""
     steam = ""

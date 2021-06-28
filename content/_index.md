@@ -1,1 +1,1 @@
-Here is a example blog.
+You can contact me.
