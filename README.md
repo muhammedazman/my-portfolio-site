@@ -1,4 +1,4 @@
-# Muhammed Azman - Hugo Theme
+# My Hugo Theme
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/976f2b0a-eb9e-4e5e-ac66-388edde687a2/deploy-status)](https://app.netlify.com/sites/muhammedazman/deploys)
 
