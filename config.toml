@@ -43,8 +43,11 @@ paginate = 6
   name = "Articles"
   url = "/articles/"
 [[menu.header]]
-  name = "Java"
-  url = "/java/"
+  name = "Projects"
+  url = "/projects/"
+[[menu.header]]
+  name = "Tutorials"
+  url = "/tutorials/"
 
 [[menu.footer]]
     name = "RSS"

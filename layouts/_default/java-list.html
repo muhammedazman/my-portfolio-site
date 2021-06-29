@@ -1,7 +1,8 @@
 {{ define "main" }}
 
-{{ $pages := where .Site.Pages "Section" "java" }}
-{{ $pages = (.Paginate $pages).Pages }}
+{{ $pages := where .Site.Pages "Section" "tutorials" }}
+
+<p>{{ len $pages }}</p>
 
 <header>
   <div class="container">
@@ -18,6 +19,7 @@
     <section>
       <div class="posts">
         {{ range $pages.ByParam "group" }}
+        {{ if eq .Page.Params.folder "java" }}
         <div class="post">
           {{ if eq .Page.Params.type "index" }}
           <h2>{{ .Title }}</h2>
@@ -31,6 +33,7 @@
           </a>
           {{ end }}
         </div>
+        {{ end }}
         {{ end }}
       </div>
     </section>

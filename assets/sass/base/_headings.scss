@@ -41,7 +41,8 @@ h1 {
 h2 {
     font-size: 1.75rem;
     padding-bottom: 0.5rem;
-    border-bottom: 4px solid var(--light-background);
+    //border-bottom: 4px solid var(--light-background);
+    border-bottom: 3px solid var(--border-color);
 
     code {
         font-size: 1.75rem !important;

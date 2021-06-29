@@ -35,6 +35,7 @@ section {
 @media screen and (min-width: 800px) {
     section>h2 {
         margin-bottom: 2rem;
+        justify-content: space-between;
     }
 }
 
@@ -52,17 +53,18 @@ section>h2 {
 }
 
 a.section-button {
-    font-weight: 500;
     background: var(--light-background);
     color: var(--dark-font-color);
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8rem;
-    border-radius: 0.3rem;
-    border-width: 0 !important;
+    padding: .6rem;
+    font-size: .9rem;
     white-space: nowrap;
     line-height: 1;
     margin-left: 2rem;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+    letter-spacing: 0;
+    border: 1px solid var(--border-color)!important;
 
     &:hover {
         background: var(--light-background-hover);

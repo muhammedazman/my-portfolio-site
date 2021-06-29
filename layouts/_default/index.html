@@ -32,7 +32,7 @@
 <div class="container">
     <section>
         <h2>
-            Latest Articles
+            Latest Articles.
             <a class="section-button" href="/articles">View all</a>
         </h2>
         <div class="posts">
@@ -51,7 +51,7 @@
     </section>
     {{ if gt (len $projects) 0}}
     <section>
-        <h2>Projects</h2>
+        <h2>Projects.</h2>
         <div class="projects">
             {{ range $projects.ByWeight }}
             <div class="project">
@@ -70,6 +70,29 @@
         </div>
     </section>
     {{ end }}
-</div>
 
+    {{ $tutorials := where .Site.Pages "Section" "tutorials" }}
+
+    {{ if gt (len $tutorials) 0}}
+    <section>
+        <h2>Tutorials.</h2>
+        <div class="tutorials">
+            {{ range $tutorials.ByWeight }}
+            {{ if and (eq .File.LogicalName "_index.md") (eq .Params.type "master") }}
+            <div class="tutorial">
+                <div>
+                    <a href="{{ .Params.link }}" target="_blank" rel="noreferrer">
+                        <div class="icon">{{ .Params.icon }}</div>
+                        <h3>{{ .Title }}</h3>
+                    </a>
+                    <div class="description">{{ .Params.description }}</div>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+</div>
 {{ end }}
