@@ -1,14 +1,23 @@
 {{ define "main" }}
 
 
+{{ $tutorials := where .Site.Pages "Section" "post" }}
+
+
+<header>
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p class="subtitle">{{ .Params.subtitle }}</p>
+    </div>
+</header>
+
 <div class="container">
 
 
-    {{ $tutorials := where .Site.Pages "Section" "tutorials" }}
+  
 
     {{ if gt (len $tutorials) 0}}
     <section>
-        <h2>Tutorials</h2>
         <div class="tutorials">
             {{ range $tutorials.ByWeight }}
             {{ if and (eq .File.LogicalName "_index.md") (eq .Params.type "master") }}

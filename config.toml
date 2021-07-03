@@ -30,6 +30,7 @@ paginate = 6
     github = "https://github.com/muhammedazman"
     instagram = ""
     linkedin = "https://www.linkedin.com/in/muhammed-azman-786960168/"
+    codepen = "https://codepen.io/muhammedazman"
     medium = ""
     stack-overflow = ""
     steam = ""
@@ -47,7 +48,7 @@ paginate = 6
   url = "/projects/"
 [[menu.header]]
   name = "Tutorials"
-  url = "/tutorials/"
+  url = "/post/tutorials/"
 
 [[menu.footer]]
     name = "RSS"

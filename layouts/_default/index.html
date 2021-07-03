@@ -71,7 +71,7 @@
     </section>
     {{ end }}
 
-    {{ $tutorials := where .Site.Pages "Section" "tutorials" }}
+    {{ $tutorials := where .Site.Pages "Section" "post" }}
 
     {{ if gt (len $tutorials) 0}}
     <section>

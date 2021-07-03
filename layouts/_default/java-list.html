@@ -1,12 +1,11 @@
 {{ define "main" }}
 
-{{ $pages := where .Site.Pages "Section" "tutorials" }}
+{{ $pages := where .Site.Pages "Section" "post" }}
 
-<p>{{ len $pages }}</p>
 
 <header>
   <div class="container">
-    <h1>{{ .Title }}</h1>
+    <h1 class="flex"><div class="icon">{{ .Params.icon }}</div>{{ .Title }}</h1>
     <p class="subtitle">
       Java, Spring, Hibernate and everything else.
     </p>
